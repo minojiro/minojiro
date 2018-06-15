@@ -3,6 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueAnalytics from 'vue-analytics'
+
+// リリース前にfalse外す。てか、devかどうか自動で判定したみ
+if(false){
+  Vue.use(VueAnalytics, {
+    id: 'UA-66673433-1',
+    router
+  })
+}
 
 Vue.config.productionTip = false
 
