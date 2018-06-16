@@ -1,11 +1,11 @@
 <template>
-  <div class="header-wrap" :class="{'pos-down': posDown}">
+  <div class="header-wrap" :class="{'pos-down': posDown, 'sp-hide': isSpHide}">
     <header>
       <h1><router-link v-bind:to="{ name : 'PageGallery'}">minoJiro</router-link></h1>
       <nav>
         <ul>
           <li><router-link v-bind:to="{ name : 'PageGallery'}">gallery</router-link></li>
-          <li><router-link v-bind:to="{ name : 'PageProfile'}">introduction</router-link></li>
+          <li><router-link v-bind:to="{ name : 'PageProfile'}">profile</router-link></li>
           <li><router-link v-bind:to="{ name : 'PageContact'}">contact</router-link></li>
           <li><a href="https://twitter.com/the_minojiro" target="_blank">twitter</a></li>
         </ul>
@@ -21,13 +21,21 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       posDown: true,
+      prevScrollTop: 0,
+      isSpHide: false,
     }
   },
   mounted () {
     window.onscroll = () => {
-      this.posDown = document.documentElement.scrollTop < 50;
+      // const scrollTop = document.documentElement.scrollTop;
+      const scrollTop = window.pageYOffset;
+      this.posDown = scrollTop < 50;
+      if(this.prevScrollTop !== scrollTop) {
+        this.isSpHide = !this.posDown && this.prevScrollTop < scrollTop;
+        this.prevScrollTop = scrollTop;
+      }
     }
-  }
+  },
 }
 </script>
 
@@ -42,7 +50,10 @@ export default {
   width: 100%;
   z-index: 1;
   transform: translateY(50px);
-  transition: transform 1s ease;
+  transition: transform 1s ease, opacity 0.4s ease;
+}
+.header-wrap.sp-hide {
+  opacity: 0;
 }
 
 header {
@@ -80,6 +91,9 @@ a {
 @media screen and (min-width: 980px) {
   .header-wrap.pos-down {
     transform: translateY(150px);
+  }
+  .header-wrap.sp-hide {
+    opacity: 1;
   }
 
   header {

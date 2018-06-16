@@ -121,6 +121,7 @@ input[type='text'], textarea {
   padding: 15px;
   outline: 0;
   background: #f8f8f8;
+  border-radius: 0;
 }
 input[type='text']:focus, textarea:focus {
   background: #fff;

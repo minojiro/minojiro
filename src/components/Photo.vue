@@ -24,7 +24,6 @@ export default {
     }
   },
   mounted() {
-    console.log('created!');
     window.addEventListener('scroll', this.scrollTopChanged);
     this.scrollTopChanged();
   },
@@ -41,7 +40,7 @@ export default {
       if(this.fname) {
         return require(`../assets/${this.fname}`);
       } else {
-        const size = window.innerWidth >= 320 ? 'l' : 'm';
+        const size = window.innerWidth >= 400 ? 'l' : 'm';
         return require(`../assets/photos/${size}/${this.imgId}.jpg`);
       }
     },
@@ -63,6 +62,7 @@ export default {
       let img = new Image();
       img.onload=()=>{
         this.loaded = true;
+        this.$ga.event('Photo', 'appeared', `img id: ${this.imgId}`, this.imgId)
       }
       img.src = this.imagePath;
       this.startLoading = true
@@ -103,26 +103,24 @@ export default {
   transition: all 1s ease;
 }
 .caption {
-  margin-top: 10px;
+  margin-top: 12px;
   align-items: center;
   color: #999;
+  font-size: 10px;
 }
 .model {
-  font-size: 14px;
   flex: 1;
-}
-.staff {
-  font-size: 10px;
 }
 .caption p {
   transition: all 0.5s ease;
 }
 .caption .model {
   transition-delay: 0.5s;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 .caption .staff {
   transition-delay: 1s;
+  line-height: 1.3;
 }
 .caption:not(.loaded) p {
   opacity: 0;
@@ -133,10 +131,11 @@ export default {
   }
   .caption {
     display: flex;
-    
+    margin-top: 10px;
   }
   .caption .model {
     margin-bottom: 0;
+    font-size: 14px;
   }
 }
 </style>
