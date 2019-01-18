@@ -17,7 +17,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      // imageUrl: 'http://minojiro.com/img/teaser1.jpg',
+      // imageUrl: 'https://minojiro.com/img/teaser1.jpg',
       loaded: false,
       scrollTop: 0,
       startLoading: false,
