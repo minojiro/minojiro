@@ -32,6 +32,18 @@
 
 <script>
 import axios from 'axios'
+const firebase = require('firebase');
+firebase.initializeApp({
+  apiKey: 'AIzaSyAnIRYuFJjGV-8oAjo1fV00QWhF0gDk-1s',
+  authDomain: 'minojiro-89b29.firebaseapp.com',
+  databaseURL: 'https://minojiro-89b29.firebaseio.com',
+  projectId: 'minojiro-89b29',
+  storageBucket: 'minojiro-89b29.appspot.com',
+  messagingSenderId: '527897844394'
+});
+
+const db = firebase.firestore();
+
 export default {
   name: 'PageGallery',
   data () {
@@ -43,7 +55,6 @@ export default {
       emailTaint: false,
       message: '',
       messageTaint: false,
-      formApiEndpoint: 'https://script.google.com/macros/s/AKfycbxAUKGirhAqzn2cojHJyNi83TW9gQEOdG84AmXJNZ9IiL8RnEuK/exec',
       formStatus: 'form',
     }
   },
@@ -66,20 +77,23 @@ export default {
     sendable () {
       return !this.hasError;
     },
+    formParams() {
+      return {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      }
+    },
   },
   methods: {
     formSend() {
       if(!this.sendable) return;
       this.formStatus = 'loading';
-      axios.get(this.formApiEndpoint, {params:{
-        name: this.name,
-        email: this.email,
-        message: this.message,
-      }}).then(()=>{
-        this.formStatus = 'done';
-      }).catch(()=>{
-        this.formStatus = 'form';
-      });
+      const timestamp = firebase.firestore.FieldValue.serverTimestamp();
+      db.collection('contacts')
+        .add({...this.formParams, timestamp})
+        .then(_ => this.formStatus = 'done')
+        .catch(_ => this.formStatus = 'form');
     }
   }
 }
