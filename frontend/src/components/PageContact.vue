@@ -64,7 +64,7 @@ export default {
       return this.nameTaint && this.emailTaint && this.messageTaint;
     },
     sendable () {
-      return !this.hasError && this.allTaint;
+      return !this.hasError;
     },
   },
   methods: {
