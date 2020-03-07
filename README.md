@@ -8,6 +8,17 @@ https://minojiro.com/
 
 ## Build Setup
 
+### Set environment variables
+
+https://minojiro.microcms.io/apis/
+
+```
+export X_API_KEY=XXXXX
+export X_WRITE_API_KEY=XXXXX
+```
+
+### terminal
+
 ``` bash
 # install dependencies
 $ npm install
