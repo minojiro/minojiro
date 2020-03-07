@@ -29,7 +29,7 @@ export default {
         { hid: 'og:url', property: 'og:url', content: 'https://minojiro.com' },
         { hid: 'og:title', property: 'og:title', content: 'Photographer minoJiro (みのじろー)' },
         { hid: 'og:description', property: 'og:description', content: 'みのじろーのポートレート写真集。' },
-        // { hid: 'og:image', property: 'og:image', content: 'https://minojiro.com/ogp.jpg' },
+        { hid: 'og:image', property: 'og:image', content: 'https://images.microcms-assets.io/protected/ap-northeast-1:c8a44bb0-4c16-41f2-8110-55ed01438192/service/minojiro/media/05.jpg' },
       ],
     }
   },
