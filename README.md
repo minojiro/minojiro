@@ -1,6 +1,10 @@
-# minojiro
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9d1bc5fe-9db8-465d-8505-61ee7bd8cd4b/deploy-status)](https://app.netlify.com/sites/minojiro/deploys)
 
-> minojiro website
+# minoJiro
+
+The world most populer and coolest photographer's website.
+
+https://minojiro.com/
 
 ## Build Setup
 
