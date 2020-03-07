@@ -1,6 +1,12 @@
+require('dotenv').config()
+const { X_API_KEY, X_WRITE_API_KEY } = process.env
 
 export default {
   mode: 'universal',
+  env: {
+    X_API_KEY,
+    X_WRITE_API_KEY,
+  },
   /*
   ** Headers of the page
   */
