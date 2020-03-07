@@ -1,7 +1,11 @@
+import client from './client'
+
 class ApiContacts {
-  postContact() {
-    return new Promise((res, rej) => {
-      setTimeout(() => res({}), 500)
+  async postContact(params) {
+    await client.post('contacts', {
+      name: params.name,
+      email: params.email,
+      message: params.message,
     })
   }
 }
