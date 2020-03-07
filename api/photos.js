@@ -2,7 +2,7 @@ import client from './client'
 
 class ApiPhotos {
   async getPhotos() {
-    const res = await client.get('photos')
+    const res = await client.get('photos?limit=99')
     return res.data.contents.map(photo => ({
       id: photo.id,
       src: photo.image.url,
