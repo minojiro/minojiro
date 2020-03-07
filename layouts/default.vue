@@ -83,11 +83,11 @@ a {
   max-width: 1100px;
 }
 .content-wrap {
-  padding: 150px 0 50px;
+  padding: 150px 0;
 }
 @media screen and (min-width: 980px) {
   .content-wrap {
-    padding-top: 300px;
+    padding: 300px 0;
   }
 }
 </style>

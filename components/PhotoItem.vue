@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="photo" :class="{loaded}" ref="photo">
-      <div class="photo-inner" :style="{backgroundImage}"></div>
+      <img
+        @load="startLoad"
+        :srcset="srcset"
+        :src="srcS" alt="">
     </div>
     <div class="caption" v-if="hasCaption" :class="{loaded}">
       <p class="model">{{model}}</p>
@@ -18,10 +21,17 @@ export default {
     return {
       loaded: false,
       scrollTop: 0,
-      startLoading: false,
     }
   },
   computed: {
+    srcS() {
+      return `${this.src}?w=750`
+    },
+    srcset() {
+      return `
+        ${this.srcS}?w=750 640w,
+        ${this.src}`
+    },
     hasCaption() {
       return !!(this.model || this.staff)
     },
@@ -31,13 +41,8 @@ export default {
   },
   methods: {
     startLoad () {
-      let img = new Image();
-      img.onload = () => (this.loaded = true)
-      img.src = this.src;
+      this.loaded = true
     },
-  },
-  mounted() {
-    this.startLoad()
   },
 }
 </script>
@@ -50,8 +55,21 @@ export default {
   overflow: hidden;
   transition: border 1s ease;
 }
+.photo img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 .photo.loaded {
   border-color: transparent;
+}
+.photo.loaded img {
+  opacity: 1;
 }
 .photo:before {
   content:'';
