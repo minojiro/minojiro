@@ -1,10 +1,13 @@
 <template>
   <div>
     <div class="photo" :class="{loaded}" ref="photo">
-      <img
-        @load="startLoad"
-        :srcset="srcset"
-        :src="srcS" alt="">
+      <picture>
+        <source type="image/webp" :srcset="webpSrcset">
+        <img
+          @load="startLoad"
+          :srcset="srcset"
+          :src="srcS" alt="">
+      </picture>
     </div>
     <div class="caption" v-if="hasCaption" :class="{loaded}">
       <p class="model">{{model}}</p>
@@ -29,8 +32,13 @@ export default {
     },
     srcset() {
       return `
-        ${this.srcS}?w=750 640w,
+        ${this.src}?w=750 640w,
         ${this.src}`
+    },
+    webpSrcset() {
+      return `
+        ${this.src}?fm=webp&w=750&fm=webp 640w,
+        ${this.src}?fm=webp`
     },
     hasCaption() {
       return !!(this.model || this.staff)
