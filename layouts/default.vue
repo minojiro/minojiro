@@ -1,55 +1,93 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="container">
+    <AppHeader />
+    <div class="content-wrap">
+      <transition name="fade">
+        <nuxt />
+      </transition>
+    </div>
   </div>
 </template>
 
+<script>
+import AppHeader from '@/components/AppHeader'
+
+export default {
+  components: {
+    AppHeader,
+  },
+  head () {
+    return {
+      title: 'Photographer minoJiro (みのじろー)',
+      htmlAttrs: {
+        prefix: 'og: http://ogp.me/ns#'
+      },
+      meta: [
+        { hid: 'description', name: 'description', content: 'みのじろーのポートレート写真集。' },
+        { hid: 'og:site_name', property: 'og:site_name', content: 'Photographer minoJiro (みのじろー)' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:url', property: 'og:url', content: 'https://minojiro.com' },
+        { hid: 'og:title', property: 'og:title', content: 'Photographer minoJiro (みのじろー)' },
+        { hid: 'og:description', property: 'og:description', content: 'みのじろーのポートレート写真集。' },
+        // { hid: 'og:image', property: 'og:image', content: 'https://minojiro.com/ogp.jpg' },
+      ],
+    }
+  },
+}
+</script>
+
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity, transform;
+  transition-duration: .75s;
+}
+.fade-enter-active {
+  transition-delay: .75s;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+  transform: translateY(40px);
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0 20px;
+  font-family: 'Cochin', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.02em;
+}
+h1, h2, h3,h4,h5 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+li {
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+a {
+  color: inherit;
 }
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
 }
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.content-wrap {
+  padding: 150px 0 50px;
+}
+@media screen and (min-width: 980px) {
+  .content-wrap {
+    padding-top: 300px;
+  }
 }
 </style>
