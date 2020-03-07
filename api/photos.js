@@ -1,14 +1,14 @@
+import client from './client'
+
 class ApiPhotos {
-  getPhotos() {
-    const items = Array.from({length: 10}, (_,id) => ({
-      id,
-      src: '//placehold.jp/100x100.png',
-      model: 'model',
-      staff: 'staff',
+  async getPhotos() {
+    const res = await client.get('photos')
+    return res.data.contents.map(photo => ({
+      id: photo.id,
+      src: photo.image.url,
+      model: photo.model_name,
+      staff: photo.staff,
     }))
-    return new Promise(res => {
-      setTimeout(() => res(items), 500)
-    })
   }
 }
 
