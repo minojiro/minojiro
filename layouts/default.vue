@@ -37,19 +37,6 @@ export default {
 </script>
 
 <style>
-
-.fade-enter-active, .fade-leave-active {
-  transition-property: opacity, transform;
-  transition-duration: .75s;
-}
-.fade-enter-active {
-  transition-delay: .75s;
-}
-.fade-enter, .fade-leave-active {
-  opacity: 0;
-  transform: translateY(40px);
-}
-
 body {
   margin: 0;
   padding: 0 20px;
@@ -85,6 +72,14 @@ a {
 .content-wrap {
   padding: 150px 0;
 }
+.page {
+  transition: all 0.7s ease;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
 @media screen and (min-width: 980px) {
   .content-wrap {
     padding: 300px 0;
