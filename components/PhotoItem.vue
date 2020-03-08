@@ -10,7 +10,7 @@
       </picture>
     </div>
     <div class="caption" v-if="hasCaption" :class="{loaded}">
-      <p class="model">{{model}}</p>
+      <h2 class="model">{{model}}</h2>
       <p class="staff">{{staff}}</p>
     </div>
   </div>

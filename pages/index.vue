@@ -1,9 +1,9 @@
 <template>
-  <ul class="list">
-    <li v-for="photo in photos" :key="photo.id">
+  <div class="list">
+    <article v-for="photo in photos" :key="photo.id">
       <PhotoItem :src="photo.src" :model="photo.model" :staff="photo.staff" />
-    </li>
-  </ul>
+    </article>
+  </div>
 </template>
 
 <script>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-.list li:nth-last-child(n + 2) {
+.list > article:nth-last-child(n + 2) {
   margin-bottom: 50px;
 }
 </style>
