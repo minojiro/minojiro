@@ -41,7 +41,7 @@ body {
   font-size: 13px;
   position: sticky;
   top: 25px;
-  transition: all 0.3s ease;
+  transition: visibility 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
 }
 
 .scrollingDown .pageHeader {
@@ -81,7 +81,7 @@ body {
 .image__label {
   margin-top: 20px;
   font-size: 12px;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .scrollingDown .image__label {
