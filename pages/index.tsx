@@ -25,7 +25,7 @@ const IndexPage = ({photoPosts}: Props) => {
     let lastScrollTop = 0
     window.document.addEventListener('scroll', () => {
       const scrollTop = document.documentElement.scrollTop
-      setScrollingDown(lastScrollTop < scrollTop)
+      setScrollingDown(lastScrollTop < scrollTop && scrollTop > 100)
       lastScrollTop = scrollTop
     })
   }, [])
