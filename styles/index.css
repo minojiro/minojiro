@@ -1,0 +1,96 @@
+html, body, div, h1,h2,h3,h4,h5,p,img, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+ul, ol, li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  opacity: 0.4;
+}
+body {
+  line-height: 1.8;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #303030;
+}
+.container {
+  margin: 0 auto;
+  padding: 50px 20px;
+  max-width: 100%;
+  width: 110vh;
+}
+
+
+@media screen and (min-width: 1240px) {
+  .container {
+    padding: 100px 20px;
+    max-width: 1240px;
+  }
+}
+.pageHeader {
+  margin-bottom: 50px;
+  font-size: 13px;
+  position: sticky;
+  top: 25px;
+  transition: visibility 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.scrollingDown .pageHeader {
+  opacity: 0;
+  visibility: collapse;
+  transition-duration: 0.6s;
+  filter: blur(6px);
+}
+@media screen and (min-width: 640px) {
+  .pageHeader {
+    font-size: 20px;
+    margin-bottom: 100px;
+    top: 50px;
+  }
+}
+.pageHeader__title {
+  font-weight: bold;
+}
+
+
+.pageHeader__leid {
+}
+
+.imageList > li:nth-last-child(n + 2){
+  margin-bottom: 110px;
+}
+
+
+.image__imgWrap {
+  background: #fafafa;
+}
+.image__imgWrap img {
+  width: 100%;
+  aspect-ratio: 60/45;
+  object-fit: contain;
+}
+.image__label {
+  margin-top: 20px;
+  font-size: 12px;
+  transition: opacity 0.3s ease;
+}
+
+.scrollingDown .image__label {
+  opacity: 0.2;
+  transition-duration: 0.7s;
+}
+
+@media screen and (min-width: 640px) {
+  .image__label {
+    font-size: 16px;
+  }
+}
