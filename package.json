@@ -9,7 +9,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "modern-normalize": "^1.1.0",
     "next": "latest",
     "react": "^17.0.1",
