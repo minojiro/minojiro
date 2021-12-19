@@ -9,13 +9,11 @@ type Props = {
 }
 
 const PhotoListMemo = React.memo(({photoPosts}: {photoPosts: PhotoPost[]}) => (
-  <ul className="imageList">
+  <>
     {photoPosts.map(photoPost => (
-      <li key={photoPost.id}>
-        <Photo photoPost={photoPost} />
-      </li>
+      <Photo key={photoPost.id} photoPost={photoPost} />
     ))}
-  </ul>
+  </>
 ))
 
 const IndexPage = ({photoPosts}: Props) => {
@@ -37,7 +35,9 @@ const IndexPage = ({photoPosts}: Props) => {
           <h1 className="pageHeader__title">minoJiro photographs</h1>
           <p className="pageHeader__leid">contact me on <a href="https://www.instagram.com/_minojiro/" target="_blank" rel="noopener">Instagram</a> or <a href="https://twitter.com/the_minojiro" target="_blank" rel="noopener">Twitter</a> DM.</p>
         </header>
-        <PhotoListMemo photoPosts={photoPosts} />
+        <main>
+          <PhotoListMemo photoPosts={photoPosts} />
+        </main>
       </div>
     </Layout>
   )

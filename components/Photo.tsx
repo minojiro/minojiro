@@ -12,20 +12,20 @@ const Layout = ({ photoPost }: Props) => {
   ].join(' ')
 
   return (
-    <div className="image">
+    <section className="image">
+      <div className="image__label">
+        <h2 className="image__modelName">{ photoPost.modelName }</h2>
+        <p className="image__staff">{ photoPost.staff }</p>
+      </div>
       <div className="image__imgWrap">
         <picture>
           <source srcSet={`${photoPost.src}?fm=webp&w=750`}
             media="(max-width: 750px)" />
           <source srcSet={`${photoPost.src}?fm=webp`} />
-          <img src={photoPost.src} srcSet={srcSet} alt={photoPost.modelName} loading="lazy" />
+          <img src={photoPost.src} srcSet={srcSet} alt="" loading="lazy" />
         </picture>
       </div>
-      <div className="image__label">
-        <h2>{ photoPost.modelName }</h2>
-        <p>{ photoPost.staff }</p>
-      </div>
-    </div>
+    </section>
   )
 }
 
