@@ -1,7 +1,7 @@
 @import '~modern-normalize/modern-normalize.css';
 
 :root {
-  font-size: calc(0.5vw + 0.5rem);
+  font-size: calc(0.3vw + 0.8rem);
 }
 
 html, body, div, h1, h2, p, ul, li {
