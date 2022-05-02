@@ -2,8 +2,6 @@
 
 Web Engineer, UI Designer
 
-![11143028_858154584256404_111197479_n](https://user-images.githubusercontent.com/5090244/166208103-2ff7d934-d28b-4d8b-b5a6-8ee051162188.jpg)
-
 <p> 
   <a target="_blank" ref="noopener" href="http://twitter.com/minojiro">
     <img height="20" src="https://img.shields.io/twitter/follow/minojiro?label=Twitter&logo=twitter&style=flat" />
