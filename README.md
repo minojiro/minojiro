@@ -52,11 +52,12 @@ Web Engineer, UI Designer
 
 ## Environment
 
-- Editor: VSCode
-- Shell: zsh
+- Editor: Visual Studio Code
+- Shell: Z Shell
 - OS: macOS Monterey
-- PC: Apple MacBook Pro 2018
-- Devices: Apple iPad 2020, Apple iPhone 12 Pro
+- PC: Apple MacBook Pro (15-inch, 2018)
+- Tablet: Apple iPad 2020
+- Smartphone: Apple iPhone 12 Pro
 - UI Design tools: Figma, Sketch, Adobe XD
 - Communication tools: Slack, ChatWork, Zoom and LINE
 
