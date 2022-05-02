@@ -1,41 +1,93 @@
-# TypeScript Next.js example
+# 🧑‍💻 Hello! I'm minoJiro
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+Web Engineer, UI Designer
 
-## Deploy your own
+![11143028_858154584256404_111197479_n](https://user-images.githubusercontent.com/5090244/166208103-2ff7d934-d28b-4d8b-b5a6-8ee051162188.jpg)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+<p> 
+  <a target="_blank" ref="noopener" href="http://twitter.com/minojiro">
+    <img height="20" src="https://img.shields.io/twitter/follow/minojiro?label=Twitter&logo=twitter&style=flat" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://github.com/minojiro">
+    <img height="20" src="https://img.shields.io/github/followers/minojiro?label=follow&logo=github&style=flat" />
+  </a>
+  <a target="_blank" ref="noopener" href="http://qiita.com/minojiro">
+    <img height="20" src="https://qiita-badge.apiapi.app/s/minojiro/posts.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://zenn.dev/minojiro">
+    <img height="20" src="https://zenn.badge.nikaera.com/s/minojiro/likes" />
+  </a>
+  <a target="_blank" ref="noopener" href="http://qiita.com/minojiro">
+    <img height="20" src="https://qiita-badge.apiapi.app/s/minojiro/contributions.svg" />
+  </a>
+</p>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+<p>
+  <a target="_blank" ref="noopener" href="https://minojiro.com/">
+    <img alt="homepage" width="30px" src="https://simpleicons.org/icons/smugmug.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://twitter.com/the_minojiro">
+    <img alt="twitter" width="30px" src="https://simpleicons.org/icons/twitter.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://instagram.com/the_minojiro">
+    <img alt="instagram" width="30px" src="https://simpleicons.org/icons/instagram.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://qiita.com/minojiro">
+    <img alt="qiita" width="30px" src="https://simpleicons.org/icons/qiita.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://lapras.com/public/minojiro">
+    <img alt="qiita" width="30px" src="https://simpleicons.org/icons/lospec.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://www.wantedly.com/id/minojiro">
+    <img alt="wantedly" width="30px" src="https://simpleicons.org/icons/winmate.svg" />
+  </a>
+</p>
 
-## How to use it?
+<p align="left"> 
+  <!-- <img alt="Top Langs" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=minojiro&layout=compact&count_private=true&show_icons=true&show_icons=true&theme=onedark" /> -->
+  <img alt="github stats" height="150px" src="https://github-readme-stats.vercel.app/api?username=minojiro&count_private=true&show_icons=true&show_icons=true" />
+</p>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+[![trophy](https://github-profile-trophy.vercel.app/?username=minojiro&theme=gruvbox)](https://github.com/ryo-ma/github-profile-trophy)
+[![](https://raw.githubusercontent.com/minojiro/minojiro/master/profile-summary-card-output/dracula/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/minojiro/minojiro/master/profile-summary-card-output/dracula/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-# or
-yarn create next-app --example with-typescript with-typescript-app
-```
+## Environment
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- Editor: VSCode
+- Shell: zsh
+- OS: macOS Monterey
+- PC: Apple MacBook Pro 2018
+- Devices: Apple iPad 2020, Apple iPhone 12 Pro
+- UI Design tools: Figma, Sketch, Adobe XD
+- Communication tools: Slack, ChatWork, Zoom and LINE
 
-## Notes
+## Career History
 
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+### Freelance
+Frontend Engineer, UI Designer (2018-)
 
-```
-npm install --save-dev typescript
-```
+#### Clients
 
-To enable TypeScript's features, we install the type declarations for React and Node.
+ - ENECHANGE Ltd.
+ - Topcourt Law firm.,
+ - LAPRAS Inc.
+ - KAI-YOU Inc.
+ - etc.
 
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
+### [full size image inc.](https://www.fsimg.jp/)
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
+Web Engineer (Frontend, Backend, CMS), Application Engineer, Designer (2014-2017)
 
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
+#### Clients
 
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+ - RICOH IMAGING
+ - Sony Corporation
+ - RAYCOP JAPAN INC.
+ - Kiyomizu-dera
+ - etc.
+
+
+### [delightarts inc.](https://delightarts.com/)
+
+Web Engineer (Frontend, Backend), Designer (2012-2014)
