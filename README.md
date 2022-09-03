@@ -55,7 +55,7 @@ Web Engineer, UI Designer
 - Editor: Visual Studio Code
 - Shell: Z Shell
 - OS: macOS Monterey
-- PC: Apple MacBook Pro (15-inch, 2018)
+- PC: Apple MacBook Air (M2, 2022)
 - Tablet: Apple iPad 2020
 - Smartphone: Apple iPhone 12 Pro
 - UI Design tools: Figma, Sketch, Adobe XD
