@@ -51,6 +51,8 @@ Web Engineer, UI Designer
 [![](https://raw.githubusercontent.com/minojiro/minojiro/master/profile-summary-card-output/dracula/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
 <!--START_SECTION:lapras-card-->
+<a href="https://lapras.com/public/minojiro" target="_blank" rel="noopener noreferrer"><img src="https://lapras-card-generator.vercel.app/api/svg?e=3.59&b=3.48&i=3.36&b1=%23003089&b2=%23003089&i1=%230a2e75&i2=%230a2e75&l=en" width="400" ></a>  
+Last Updated on 12/13/2022, 6:36:26 AM UTC
 <!--END_SECTION:lapras-card-->
 
 ## Environment
