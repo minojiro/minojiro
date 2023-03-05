@@ -1,71 +1,97 @@
-# Qwik City App ⚡️
+# 🧑‍💻 Hello! I'm minoJiro
 
-- [Qwik Docs](https://qwik.builder.io/)
-- [Discord](https://qwik.builder.io/chat)
-- [Qwik GitHub](https://github.com/BuilderIO/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
+Web Engineer, UI Designer
 
----
+<p> 
+  <a target="_blank" ref="noopener" href="http://twitter.com/minojiro">
+    <img height="20" src="https://img.shields.io/twitter/follow/minojiro?label=Twitter&logo=twitter&style=flat" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://github.com/minojiro">
+    <img height="20" src="https://img.shields.io/github/followers/minojiro?label=follow&logo=github&style=flat" />
+  </a>
+  <a target="_blank" ref="noopener" href="http://qiita.com/minojiro">
+    <img height="20" src="https://qiita-badge.apiapi.app/s/minojiro/posts.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://zenn.dev/minojiro">
+    <img height="20" src="https://zenn.badge.nikaera.com/s/minojiro/likes" />
+  </a>
+  <a target="_blank" ref="noopener" href="http://qiita.com/minojiro">
+    <img height="20" src="https://qiita-badge.apiapi.app/s/minojiro/contributions.svg" />
+  </a>
+</p>
 
-## Project Structure
+<p>
+  <a target="_blank" ref="noopener" href="https://minojiro.com/">
+    <img alt="homepage" width="30px" src="https://simpleicons.org/icons/smugmug.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://twitter.com/the_minojiro">
+    <img alt="twitter" width="30px" src="https://simpleicons.org/icons/twitter.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://instagram.com/the_minojiro">
+    <img alt="instagram" width="30px" src="https://simpleicons.org/icons/instagram.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://qiita.com/minojiro">
+    <img alt="qiita" width="30px" src="https://simpleicons.org/icons/qiita.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://lapras.com/public/minojiro">
+    <img alt="qiita" width="30px" src="https://simpleicons.org/icons/lospec.svg" />
+  </a>
+  <a target="_blank" ref="noopener" href="https://www.wantedly.com/id/minojiro">
+    <img alt="wantedly" width="30px" src="https://simpleicons.org/icons/winmate.svg" />
+  </a>
+</p>
 
-This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just a extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+<p align="left"> 
+  <!-- <img alt="Top Langs" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=minojiro&layout=compact&count_private=true&show_icons=true&show_icons=true&theme=onedark" /> -->
+  <img alt="github stats" height="150px" src="https://github-readme-stats.vercel.app/api?username=minojiro&count_private=true&show_icons=true&show_icons=true" />
+</p>
 
-Inside your project, you'll see the following directory structure:
+[![trophy](https://github-profile-trophy.vercel.app/?username=minojiro&theme=gruvbox)](https://github.com/ryo-ma/github-profile-trophy)
+[![](https://raw.githubusercontent.com/minojiro/minojiro/master/profile-summary-card-output/dracula/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/minojiro/minojiro/master/profile-summary-card-output/dracula/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── routes/
-        └── ...
-```
+<!--START_SECTION:lapras-card-->
+<a href="https://lapras.com/public/minojiro" target="_blank" rel="noopener noreferrer"><img src="https://lapras-card-generator.vercel.app/api/svg?e=3.62&b=3.48&i=3.36&b1=%23003089&b2=%23003089&i1=%230a2e75&i2=%230a2e75&l=en" width="400" ></a>  
+Last Updated on 1/11/2023, 12:00:00 PM
+<!--END_SECTION:lapras-card-->
 
-- `src/routes`: Provides the directory based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.builder.io/qwikcity/routing/overview/) for more info.
+## Environment
 
-- `src/components`: Recommended directory for components.
+- Editor: Visual Studio Code
+- Shell: Z Shell
+- OS: macOS Monterey
+- PC: Apple MacBook Air (M2, 2022)
+- Tablet: Apple iPad 2020
+- Smartphone: Apple iPhone 12 Pro
+- UI Design tools: Figma, Sketch, Adobe XD
+- Communication tools: Slack, ChatWork, Zoom and LINE
 
-- `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
+## Career History
 
-## Add Integrations and deployment
+### Freelance
+Frontend Engineer, UI Designer (2018-)
 
-Use the `pnpm qwik add` command to add additional integrations. Some examples of integrations include: Cloudflare, Netlify or Express server, and the [Static Site Generator (SSG)](https://qwik.builder.io/qwikcity/guides/static-site-generation/).
+#### Clients
 
-```shell
-pnpm qwik add # or `yarn qwik add`
-```
+ - ENECHANGE Ltd.
+ - Topcourt Law firm.,
+ - LAPRAS Inc.
+ - KAI-YOU Inc.
+ - etc.
 
-## Development
+### [full size image inc.](https://www.fsimg.jp/)
 
-Development mode uses [Vite's development server](https://vitejs.dev/). During development, the `dev` command will server-side render (SSR) the output.
+Web Engineer (Frontend, Backend, CMS), Application Engineer, Designer (2014-2017)
 
-```shell
-npm start # or `yarn start`
-```
+#### Clients
 
-> Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
+ - RICOH IMAGING
+ - Sony Corporation
+ - RAYCOP JAPAN INC.
+ - Kiyomizu-dera
+ - etc.
 
-## Preview
 
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to locally preview a production build, and it should not be used as a production server.
+### [delightarts inc.](https://delightarts.com/)
 
-```shell
-pnpm preview # or `yarn preview`
-```
-
-## Production
-
-The production build will generate client and server modules by running both client and server build commands. Additionally, the build command will use Typescript to run a type check on the source code.
-
-```shell
-pnpm build # or `yarn build`
-```
-
-## Static Site Generator (Node.js)
-
-```
-npm run build.server
-```
+Web Engineer (Frontend, Backend), Designer (2012-2014)
