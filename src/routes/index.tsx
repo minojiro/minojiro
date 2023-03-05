@@ -1,4 +1,4 @@
-import { component$, useSignal, useTask$, useBrowserVisibleTask$ } from '@builder.io/qwik';
+import { component$, useSignal, useTask$, $, useOnWindow } from '@builder.io/qwik';
 import PhotoItem from '../components/PhotoItem';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import type { PhotoPost } from '../types';
@@ -9,18 +9,18 @@ const MIN_SCROLL_TOP = 50
 export default component$(() => {
   const photoPosts = useSignal<PhotoPost[]>([])
   const isToUp = useSignal(true)
+  const lastScrollY = useSignal(0)
   useTask$(async () => {
     photoPosts.value = await getPhotoPosts()
   });
-  useBrowserVisibleTask$(({track}) => {
-    let lastScrollY = window.scrollY
-    track(() => isToUp);
-    window.addEventListener('scroll', () => {
+  useOnWindow(
+    'scroll',
+    $(() => {
       const { scrollY } = window
-      isToUp.value = Math.max(MIN_SCROLL_TOP,lastScrollY) > scrollY
-      lastScrollY = scrollY
+      isToUp.value = Math.max(MIN_SCROLL_TOP,lastScrollY.value) > scrollY
+      lastScrollY.value = scrollY
     })
-  })
+  )
   return (
     <div class="max-w-5xl mx-auto text-gray-800">
       <header class={`py-10 sticky top-0 md:py-24 ${isToUp.value ? '' : 'collapse'}`}>
