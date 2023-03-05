@@ -1,1 +1,0 @@
-import{e as o,F as t,_ as e}from"./q-b45996db.js";const r=o(t(()=>e(()=>import("./q-c35a0551.js"),["build/q-c35a0551.js","build/q-b45996db.js","build/q-d801b446.js"]),"s_xYL1qOwPyDI")),a={title:"minoJiro photographs",meta:[{name:"description",content:"minoJiro photographs"}]};export{r as default,a as head};
