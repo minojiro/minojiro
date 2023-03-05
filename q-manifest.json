@@ -1,0 +1,338 @@
+{
+  "symbols": {
+    "s_02wMImzEAbk": {
+      "origin": "../node_modules/.pnpm/@builder.io+qwik-city@0.5.2_@builder.io+qwik@0.20.1/node_modules/@builder.io/qwik-city/index.qwik.mjs",
+      "displayName": "QwikCityProvider_component_useTask",
+      "canonicalFilename": "s_02wmimzeabk",
+      "hash": "02wMImzEAbk",
+      "ctxKind": "function",
+      "ctxName": "useTask$",
+      "captures": true,
+      "parent": "s_TxCFOy819ag"
+    },
+    "s_0nSkP4D3SLA": {
+      "origin": "routes/index.tsx",
+      "displayName": "routes_component_useTask",
+      "canonicalFilename": "s_0nskp4d3sla",
+      "hash": "0nSkP4D3SLA",
+      "ctxKind": "function",
+      "ctxName": "useTask$",
+      "captures": true,
+      "parent": "s_xYL1qOwPyDI"
+    },
+    "s_MduQ9SzCWHQ": {
+      "origin": "root.tsx",
+      "displayName": "root_component_useTask",
+      "canonicalFilename": "s_mduq9szcwhq",
+      "hash": "MduQ9SzCWHQ",
+      "ctxKind": "function",
+      "ctxName": "useTask$",
+      "captures": true,
+      "parent": "s_3sccYCDd1Z0"
+    },
+    "s_bSbPk6Wg6CE": {
+      "origin": "routes/index.tsx",
+      "displayName": "routes_component_useBrowserVisibleTask",
+      "canonicalFilename": "s_bsbpk6wg6ce",
+      "hash": "bSbPk6Wg6CE",
+      "ctxKind": "function",
+      "ctxName": "useBrowserVisibleTask$",
+      "captures": true,
+      "parent": "s_xYL1qOwPyDI"
+    },
+    "s_3sccYCDd1Z0": {
+      "origin": "root.tsx",
+      "displayName": "root_component",
+      "canonicalFilename": "s_3sccycdd1z0",
+      "hash": "3sccYCDd1Z0",
+      "ctxKind": "function",
+      "ctxName": "component$",
+      "captures": false
+    },
+    "s_AKetNByE5TM": {
+      "origin": "../node_modules/.pnpm/@builder.io+qwik-city@0.5.2_@builder.io+qwik@0.20.1/node_modules/@builder.io/qwik-city/index.qwik.mjs",
+      "displayName": "RouterOutlet_component",
+      "canonicalFilename": "s_aketnbye5tm",
+      "hash": "AKetNByE5TM",
+      "ctxKind": "function",
+      "ctxName": "component$",
+      "captures": false
+    },
+    "s_TxCFOy819ag": {
+      "origin": "../node_modules/.pnpm/@builder.io+qwik-city@0.5.2_@builder.io+qwik@0.20.1/node_modules/@builder.io/qwik-city/index.qwik.mjs",
+      "displayName": "QwikCityProvider_component",
+      "canonicalFilename": "s_txcfoy819ag",
+      "hash": "TxCFOy819ag",
+      "ctxKind": "function",
+      "ctxName": "component$",
+      "captures": false
+    },
+    "s_rQ42B1XWxWA": {
+      "origin": "components/PhotoItem/index.tsx",
+      "displayName": "PhotoItem_component",
+      "canonicalFilename": "s_rq42b1xwxwa",
+      "hash": "rQ42B1XWxWA",
+      "ctxKind": "function",
+      "ctxName": "component$",
+      "captures": false
+    },
+    "s_xYL1qOwPyDI": {
+      "origin": "routes/index.tsx",
+      "displayName": "routes_component",
+      "canonicalFilename": "s_xyl1qowpydi",
+      "hash": "xYL1qOwPyDI",
+      "ctxKind": "function",
+      "ctxName": "component$",
+      "captures": false
+    },
+    "s_P9EdGkxN8cs": {
+      "origin": "../node_modules/.pnpm/@builder.io+qwik-city@0.5.2_@builder.io+qwik@0.20.1/node_modules/@builder.io/qwik-city/index.qwik.mjs",
+      "displayName": "RouterOutlet_component_useOnWindow",
+      "canonicalFilename": "s_p9edgkxn8cs",
+      "hash": "P9EdGkxN8cs",
+      "ctxKind": "function",
+      "ctxName": "useOnWindow",
+      "captures": false,
+      "parent": "s_AKetNByE5TM"
+    },
+    "s_fX0bDjeJa0E": {
+      "origin": "../node_modules/.pnpm/@builder.io+qwik-city@0.5.2_@builder.io+qwik@0.20.1/node_modules/@builder.io/qwik-city/index.qwik.mjs",
+      "displayName": "QwikCityProvider_component_goto",
+      "canonicalFilename": "s_fx0bdjeja0e",
+      "hash": "fX0bDjeJa0E",
+      "ctxKind": "function",
+      "ctxName": "goto",
+      "captures": true,
+      "parent": "s_TxCFOy819ag"
+    }
+  },
+  "mapping": {
+    "s_02wMImzEAbk": "q-cbe2959e.js",
+    "s_0nSkP4D3SLA": "q-c35a0551.js",
+    "s_MduQ9SzCWHQ": "q-d801b446.js",
+    "s_bSbPk6Wg6CE": "q-c35a0551.js",
+    "s_3sccYCDd1Z0": "q-d801b446.js",
+    "s_AKetNByE5TM": "q-58a0d737.js",
+    "s_TxCFOy819ag": "q-cbe2959e.js",
+    "s_rQ42B1XWxWA": "q-cd8d1133.js",
+    "s_xYL1qOwPyDI": "q-c35a0551.js",
+    "s_P9EdGkxN8cs": "q-58a0d737.js",
+    "s_fX0bDjeJa0E": "q-cbe2959e.js"
+  },
+  "bundles": {
+    "q-44d12621.js": {
+      "size": 58,
+      "imports": [
+        "q-b45996db.js"
+      ]
+    },
+    "q-45aab3b6.js": {
+      "size": 2536,
+      "origins": [
+        "node_modules/.pnpm/@builder.io+qwik-city@0.5.2_@builder.io+qwik@0.20.1/node_modules/@builder.io/qwik-city/service-worker.mjs",
+        "src/routes/service-worker.ts"
+      ]
+    },
+    "q-58a0d737.js": {
+      "size": 746,
+      "imports": [
+        "q-b45996db.js",
+        "q-d801b446.js"
+      ],
+      "origins": [
+        "src/entry_RouterOutlet.js",
+        "src/s_aketnbye5tm.js",
+        "src/s_p9edgkxn8cs.js"
+      ],
+      "symbols": [
+        "s_AKetNByE5TM",
+        "s_P9EdGkxN8cs"
+      ]
+    },
+    "q-8863d384.js": {
+      "size": 309,
+      "imports": [
+        "q-b45996db.js"
+      ],
+      "dynamicImports": [
+        "q-c35a0551.js"
+      ],
+      "origins": [
+        "src/routes/index.tsx"
+      ]
+    },
+    "q-b45996db.js": {
+      "size": 43480,
+      "dynamicImports": [
+        "q-d801b446.js"
+      ],
+      "origins": [
+        "\u0000vite/preload-helper",
+        "node_modules/.pnpm/@builder.io+qwik@0.20.1_undici@5.20.0/node_modules/@builder.io/qwik/core.min.mjs",
+        "src/global.css",
+        "src/root.tsx"
+      ]
+    },
+    "q-c35a0551.js": {
+      "size": 1538,
+      "imports": [
+        "q-b45996db.js",
+        "q-d801b446.js"
+      ],
+      "dynamicImports": [
+        "q-cd8d1133.js"
+      ],
+      "origins": [
+        "src/components/PhotoItem/index.tsx",
+        "src/entry_routes.js",
+        "src/s_0nskp4d3sla.js",
+        "src/s_bsbpk6wg6ce.js",
+        "src/s_xyl1qowpydi.js"
+      ],
+      "symbols": [
+        "s_0nSkP4D3SLA",
+        "s_bSbPk6Wg6CE",
+        "s_xYL1qOwPyDI"
+      ]
+    },
+    "q-c689a909.js": {
+      "size": 112,
+      "imports": [
+        "q-b45996db.js"
+      ],
+      "dynamicImports": [
+        "q-45aab3b6.js"
+      ],
+      "origins": [
+        "@qwik-city-entries"
+      ]
+    },
+    "q-cbe2959e.js": {
+      "size": 2361,
+      "imports": [
+        "q-b45996db.js",
+        "q-d801b446.js"
+      ],
+      "dynamicImports": [
+        "q-8863d384.js",
+        "q-c689a909.js"
+      ],
+      "origins": [
+        "@qwik-city-plan",
+        "src/entry_QwikCityProvider.js",
+        "src/s_02wmimzeabk.js",
+        "src/s_fx0bdjeja0e.js",
+        "src/s_txcfoy819ag.js"
+      ],
+      "symbols": [
+        "s_02wMImzEAbk",
+        "s_fX0bDjeJa0E",
+        "s_TxCFOy819ag"
+      ]
+    },
+    "q-cd8d1133.js": {
+      "size": 435,
+      "imports": [
+        "q-b45996db.js"
+      ],
+      "origins": [
+        "src/entry_PhotoItem.js",
+        "src/s_rq42b1xwxwa.js"
+      ],
+      "symbols": [
+        "s_rQ42B1XWxWA"
+      ]
+    },
+    "q-d801b446.js": {
+      "size": 34843,
+      "imports": [
+        "q-b45996db.js"
+      ],
+      "dynamicImports": [
+        "q-58a0d737.js",
+        "q-cbe2959e.js"
+      ],
+      "origins": [
+        "@qwik-city-sw-register",
+        "node_modules/.pnpm/@builder.io+qwik-city@0.5.2_@builder.io+qwik@0.20.1/node_modules/@builder.io/qwik-city/index.qwik.mjs",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/adapters/adapters.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/adapters/xhr.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/axios.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/cancel/CancelToken.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/cancel/CanceledError.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/cancel/isCancel.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/core/Axios.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/core/AxiosError.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/core/AxiosHeaders.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/core/InterceptorManager.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/core/buildFullPath.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/core/dispatchRequest.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/core/mergeConfig.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/core/settle.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/core/transformData.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/defaults/index.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/defaults/transitional.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/env/data.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/AxiosURLSearchParams.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/HttpStatusCode.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/bind.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/buildURL.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/combineURLs.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/cookies.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/formDataToJSON.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/isAbsoluteURL.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/isAxiosError.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/isURLSameOrigin.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/null.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/parseHeaders.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/parseProtocol.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/speedometer.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/spread.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/toFormData.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/toURLEncodedForm.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/helpers/validator.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/platform/browser/classes/Blob.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/platform/browser/classes/FormData.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/platform/browser/classes/URLSearchParams.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/platform/browser/index.js",
+        "node_modules/.pnpm/axios@1.3.4/node_modules/axios/lib/utils.js",
+        "src/api/client.ts",
+        "src/api/photos.ts",
+        "src/entry_root.js",
+        "src/s_3sccycdd1z0.js",
+        "src/s_mduq9szcwhq.js"
+      ],
+      "symbols": [
+        "s_3sccYCDd1Z0",
+        "s_MduQ9SzCWHQ"
+      ]
+    }
+  },
+  "injections": [
+    {
+      "tag": "style",
+      "location": "head",
+      "attributes": {
+        "data-src": "/build/q-2dac6c24.css",
+        "dangerouslySetInnerHTML": "*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: \"\"}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",Segoe UI Symbol,\"Noto Color Emoji\";font-feature-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.collapse{visibility:collapse}.sticky{position:sticky}.top-0{top:0px}.mx-auto{margin-left:auto;margin-right:auto}.my-24{margin-top:6rem;margin-bottom:6rem}.mb-1{margin-bottom:.25rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.aspect-photo{aspect-ratio:4 / 3}.h-auto{height:auto}.w-full{width:100%}.max-w-5xl{max-width:64rem}.flex-col{flex-direction:column}.gap-24{gap:6rem}.bg-gray-50{--tw-bg-opacity: 1;background-color:rgb(249 250 251 / var(--tw-bg-opacity))}.object-contain{-o-object-fit:contain;object-fit:contain}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.font-bold{font-weight:700}.text-gray-300{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity))}.text-gray-800{--tw-text-opacity: 1;color:rgb(31 41 55 / var(--tw-text-opacity))}.underline{text-decoration-line:underline}@media (min-width: 768px){.md\\:px-0{padding-left:0;padding-right:0}.md\\:py-24{padding-top:6rem;padding-bottom:6rem}}\n"
+      }
+    }
+  ],
+  "version": "1",
+  "options": {
+    "target": "client",
+    "buildMode": "production",
+    "forceFullBuild": true,
+    "entryStrategy": {
+      "type": "smart"
+    }
+  },
+  "platform": {
+    "qwik": "0.20.1",
+    "vite": "",
+    "rollup": "3.18.0",
+    "env": "node",
+    "os": "linux",
+    "node": "18.14.2"
+  }
+}
