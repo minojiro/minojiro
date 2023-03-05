@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from "axios";
 
 export const microcmsClient = axios.create({
   baseURL: "https://minojiro.microcms.io/api/v1/",
@@ -6,5 +6,4 @@ export const microcmsClient = axios.create({
   headers: {
     "X-MICROCMS-API-KEY": process.env.X_API_KEY,
   },
-})
-
+});

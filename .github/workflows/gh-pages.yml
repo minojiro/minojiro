@@ -3,28 +3,31 @@ on:
   push:
     branches:
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: build
+    name: build
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
         with:
-          node-version: '16'
-          check-latest: true
-
-      - name: export env
-        run: export X_API_KEY=${{ secrets.X_API_KEY }}
-      - name: install
-        run: yarn
+          version: 7.26.1
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile
       - name: build
-        run: |
-          X_API_KEY=${{ secrets.X_API_KEY }} yarn run build
-          touch out/.nojekyll
+        run: X_API_KEY=$X_API_KEY pnpm build
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+      - run: |
+          touch ./dist/.nojekyll
+          touch ./dist/CNAME
+          echo 'minojiro.com' >> ./dist/CNAME
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3.6.4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./dist
