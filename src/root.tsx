@@ -1,5 +1,6 @@
-import { component$, useTask$, useSignal } from '@builder.io/qwik';
+import { component$, useTask$, useBrowserVisibleTask$,useSignal } from '@builder.io/qwik';
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city';
+import { initializeGtm } from './lib/gtm';
 import { getPhotoPosts } from './api/photos';
 
 import './global.css';
@@ -17,6 +18,7 @@ export default component$(() => {
     const [photo] = await getPhotoPosts()
     ogImage.value = photo?.src || ''
   })
+  useBrowserVisibleTask$(() => initializeGtm())
 
   return (
     <QwikCityProvider>
@@ -36,6 +38,10 @@ export default component$(() => {
         <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
       </head>
       <body lang="en">
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNTDKBF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
