@@ -4,6 +4,8 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import type { PhotoPost } from '../types';
 import {getPhotoPosts} from '../api/photos'
 
+const MIN_SCROLL_TOP = 50
+
 export default component$(() => {
   const photoPosts = useSignal<PhotoPost[]>([])
   const isToUp = useSignal(true)
@@ -15,7 +17,7 @@ export default component$(() => {
     track(() => isToUp);
     window.addEventListener('scroll', () => {
       const { scrollY } = window
-      isToUp.value = lastScrollY > scrollY
+      isToUp.value = Math.max(MIN_SCROLL_TOP,lastScrollY) > scrollY
       lastScrollY = scrollY
     })
   })
