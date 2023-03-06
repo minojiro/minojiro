@@ -6,6 +6,9 @@ module.exports = {
       aspectRatio: {
         'photo': '4 / 3',
       },
+      fontFamily: {
+        base: ['Gamja Flower'],
+      },
     }
   },
   plugins: [],

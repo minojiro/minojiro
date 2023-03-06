@@ -37,7 +37,7 @@ export default component$(() => {
         <meta name="description" content={siteName} />
         <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
       </head>
-      <body lang="en">
+      <body lang="ja" class="font-base text-lg">
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNTDKBF"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>
