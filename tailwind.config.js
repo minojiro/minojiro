@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         base: ['Gamja Flower'],
       },
+      maxWidth: {
+        photoContainer: 'min(100vw, 112vh)',
+      }
     }
   },
   plugins: [],

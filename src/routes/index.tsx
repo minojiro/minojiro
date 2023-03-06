@@ -22,7 +22,7 @@ export default component$(() => {
     })
   )
   return (
-    <div class="max-w-5xl mx-auto text-gray-800">
+    <div class="max-w-5xl mx-auto text-gray-800 max-w-photoContainer">
       <header class={`py-10 sticky top-0 md:py-24 ${isToUp.value ? '' : 'collapse'}`}>
         <div class="px-5 md:px-0">
           <h1 class="font-bold">minoJiro photographs</h1>
