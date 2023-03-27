@@ -20,6 +20,10 @@ export default component$(() => {
     <div class="max-w-5xl mx-auto max-w-photoContainer text-gray-800">
       <GlobalHeader isToUp={true} />
       <main class="text-sm px-5" itemScope itemType="https://schema.org/Person">
+        <h2 class="text-xl mb-10">
+          <span lang="en">minoJiro</span> (<span lang="ja">みのじろー</span>)
+          profile
+        </h2>
         <ProfileData label="name" schemaItemProp="name">
           <span lang="en">minoJiro</span> (<span lang="ja">みのじろー</span>)
         </ProfileData>
@@ -152,7 +156,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "minoJiro's profile and history",
+      content: "minoJiro's profile",
     },
   ],
 };
