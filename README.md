@@ -2,6 +2,14 @@
 
 Web Engineer, UI Designer
 
+<p>
+
+![LAPRAS E-Score](https://d29vetbwpkkmm5.cloudfront.net/badge/?userId=minojiro&scoreType=e)
+![LAPRAS B-Score](https://d29vetbwpkkmm5.cloudfront.net/badge/?userId=minojiro&scoreType=b)
+![LAPRAS I-Score](https://d29vetbwpkkmm5.cloudfront.net/badge/?userId=minojiro&scoreType=i)
+
+</p>
+
 <p> 
   <a target="_blank" ref="noopener" href="http://twitter.com/minojiro">
     <img height="20" src="https://img.shields.io/twitter/follow/minojiro?label=Twitter&logo=twitter&style=flat" />
