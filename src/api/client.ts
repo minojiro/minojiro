@@ -1,9 +1,7 @@
-import axios from "axios";
+import { createClient } from "microcms-js-sdk"; //ES6
 
-export const microcmsClient = axios.create({
-  baseURL: "https://minojiro.microcms.io/api/v1/",
-  timeout: 2000,
-  headers: {
-    "X-MICROCMS-API-KEY": process.env.X_API_KEY,
-  },
+// Initialize Client SDK.
+export const microcmsClient = createClient({
+  serviceDomain: "minojiro",
+  apiKey: String(process.env.X_API_KEY),
 });
