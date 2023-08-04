@@ -3,7 +3,11 @@ import type { PhotoPost } from "../../types";
 
 export default component$(({ item }: { item: PhotoPost }) => {
   return (
-    <section>
+    <section class="gap-6 flex flex-col-reverse">
+      <div class="px-5 md:px-0">
+        <h2 class="font-bold mb-1">{item.modelName}</h2>
+        <p class="text-sm">{item.staff}</p>
+      </div>
       <picture>
         <source srcSet={`${item.src}?fm=webp`} type="image/webp" />
         <img
@@ -13,10 +17,6 @@ export default component$(({ item }: { item: PhotoPost }) => {
           loading="lazy"
         />
       </picture>
-      <div class="mt-6 px-5 md:px-0">
-        <h2 class="font-bold mb-1">{item.modelName}</h2>
-        <p class="text-sm">{item.staff}</p>
-      </div>
     </section>
   );
 });
