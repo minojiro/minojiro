@@ -18,6 +18,26 @@ const ProfileData = component$(
 export default component$(() => {
   return (
     <div class="max-w-5xl mx-auto max-w-photoContainer text-gray-800">
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "jobTitle": "Portrait Photographer",
+            "name": "みのじろー",
+            "alternateName": "minojiro",
+            "birthDate": "1990-10-12",
+            "nationality": "Japan",
+            "homeLocation": "Nagoya",
+            "workLocation": "Tokyo",
+            "sameAs": [
+              "https://twitter.com/the_minojiro",
+              "https://www.instagram.com/_minojiro"
+            ],
+            "description": "A portrait photographer based in Tokyo."
+          }
+        `}
+      </script>
       <GlobalHeader isToUp={true} />
       <main class="text-sm px-5" itemScope itemType="https://schema.org/Person">
         <h2 class="text-xl mb-10">
