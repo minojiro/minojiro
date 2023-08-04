@@ -1,7 +1,7 @@
-import { component$ } from '@builder.io/qwik';
-import type { PhotoPost } from '../../types'
+import { component$ } from "@builder.io/qwik";
+import type { PhotoPost } from "../../types";
 
-export default component$(({ item }: {item: PhotoPost}) => {
+export default component$(({ item }: { item: PhotoPost }) => {
   return (
     <section>
       <picture>
