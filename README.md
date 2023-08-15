@@ -4,9 +4,9 @@ Web Engineer, UI Designer
 
 <p>
 
-![LAPRAS E-Score](https://d29vetbwpkkmm5.cloudfront.net/badge/?userId=minojiro&scoreType=e)
-![LAPRAS B-Score](https://d29vetbwpkkmm5.cloudfront.net/badge/?userId=minojiro&scoreType=b)
-![LAPRAS I-Score](https://d29vetbwpkkmm5.cloudfront.net/badge/?userId=minojiro&scoreType=i)
+![LAPRAS E-Score](https://d29vetbwpkkmm5.cloudfront.net/badge/?userId=minojiro&scoreType=e&20230816)
+![LAPRAS B-Score](https://d29vetbwpkkmm5.cloudfront.net/badge/?userId=minojiro&scoreType=b&20230816)
+![LAPRAS I-Score](https://d29vetbwpkkmm5.cloudfront.net/badge/?userId=minojiro&scoreType=i&20230816)
 
 </p>
 
