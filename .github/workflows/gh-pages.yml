@@ -1,5 +1,6 @@
 name: deploy to github pages
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -23,11 +24,11 @@ jobs:
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
       - run: |
-          touch ./dist/.nojekyll
-          touch ./dist/CNAME
-          echo 'minojiro.com' >> ./dist/CNAME
+          touch ./out/.nojekyll
+          touch ./out/CNAME
+          echo 'minojiro.com' >> ./out/CNAME
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3.6.4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./out

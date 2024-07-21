@@ -1,5 +1,11 @@
 import { microcmsClient } from "./client";
-import type { PhotoPost } from "../types";
+
+export type PhotoPost = {
+  id: string;
+  src: string;
+  modelName: string;
+  staff: string;
+};
 
 type ResponseData = {
   contents: {
@@ -11,7 +17,6 @@ type ResponseData = {
     staff: string;
   }[];
 };
-
 export async function getPhotoPosts(): Promise<PhotoPost[]> {
   const { contents }: ResponseData = await microcmsClient.get({
     endpoint: "photos",
