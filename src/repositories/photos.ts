@@ -2,7 +2,11 @@ import { microcmsClient } from "./client";
 
 export type PhotoPost = {
   id: string;
-  src: string;
+  image: {
+    url: string;
+    width: number;
+    height: number;
+  };
   modelName: string;
   staff: string;
 };
@@ -12,6 +16,8 @@ type ResponseData = {
     id: string;
     image: {
       url: string;
+      width: number;
+      height: number;
     };
     model_name: string;
     staff: string;
@@ -23,7 +29,7 @@ export async function getPhotoPosts(): Promise<PhotoPost[]> {
   });
   return contents.map((o) => ({
     id: o.id,
-    src: o.image.url,
+    image: o.image,
     modelName: o.model_name,
     staff: o.staff,
   }));
