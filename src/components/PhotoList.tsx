@@ -37,10 +37,11 @@ export const PhotoList = ({ photos }: { photos: PhotoPost[] }) => {
   for (const [containerWidth, columnCount] of WIDTH_LIST) {
     const containerStyles: string[] = []
     const colHList = Array.from({ length: columnCount }, () => 0)
+    const colCountList = colHList.map(() => 0)
     const gap = containerWidth * 0.06
     const displayWidth =
       (containerWidth - gap * (columnCount - 1)) / columnCount
-    const randomShiftMax = containerWidth * 0.024
+    const randomShiftMax = containerWidth * 0.044
     for (const photo of photos) {
       const { width, height } = photo.image
       const colH = Math.min(...colHList)
@@ -48,9 +49,17 @@ export const PhotoList = ({ photos }: { photos: PhotoPost[] }) => {
       const topGap = +(colHList[colIndex] ? gap : 0)
       const displayHeight = (displayWidth / width) * height
       colHList[colIndex] += displayHeight + topGap
+      colCountList[colIndex]++
       const left = displayWidth * colIndex + (gap * colIndex - 1)
       const top = colH + topGap
-      const randomShift = ` translate(${Math.random() * randomShiftMax}px, ${Math.random() * randomShiftMax}px);`
+      const randomShift = ` translate(
+        ${
+          Math.random() *
+          randomShiftMax *
+          (colCountList[colIndex] % 2 === 0 ? 0.5 : -0.5)
+        }px,
+        ${Math.random() * randomShiftMax * (colIndex % 2 === 0 ? 1 : 0)}px
+      );`
       containerStyles.push(
         `.${wrapperClassName} li:nth-child(${photos.indexOf(photo) + 1}) {
 						position: absolute;

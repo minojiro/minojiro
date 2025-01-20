@@ -26,6 +26,7 @@ type ResponseData = {
 export async function getPhotoPosts(): Promise<PhotoPost[]> {
   const { contents }: ResponseData = await microcmsClient.get({
     endpoint: "photos",
+    queries: { limit: 100 },
   });
   return contents.map((o) => ({
     id: o.id,
