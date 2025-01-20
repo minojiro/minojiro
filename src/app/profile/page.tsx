@@ -39,6 +39,10 @@ export default async function Home() {
             <br />
             専門学校東京ビジュアルアーツ
             コマーシャルフォト専攻卒業後、フリーランスとして活動中。写真集「夏目あおいのなつやすみ」出版、合同写真展「ポートレート専科」参加。
+            <br />
+            <br />
+            クライアント：協同出版株式会社、東山遊園株式会社、株式会社
+            FLANDRE、HATAKE AOYAMA、相真工務店、など
           </p>
           <ProfileData title="撮れるもの">
             <ul>
