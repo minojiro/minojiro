@@ -8,10 +8,16 @@ const config: Config = {
   ],
   plugins: [],
   theme: {
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      primary: "#9FD6EC",
+    extend: {
+      fontSize: {
+        myXs: "0.75rem",
+      },
+      colors: {
+        baseText: "#5c6876",
+        transparent: "transparent",
+        current: "currentColor",
+        primary: "#9FD6EC",
+      },
     },
   },
 };

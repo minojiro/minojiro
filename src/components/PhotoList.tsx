@@ -1,4 +1,5 @@
 import type { PhotoPost } from '@/repositories/photos'
+import { RubikFont } from '@/lib/fonts'
 
 const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
   let alt = ''
@@ -10,18 +11,25 @@ const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
   const srcForPc = `${image.url}?fm=webp&w=800&q=40`
   const srcForPcJpeg = `${image.url}?w=800`
   return (
-    <picture>
-      <source srcSet={srcForSp} media="(max-width: 600px)" />
-      <source srcSet={srcForPc} type="image/webp" />
-      <img
-        src={srcForPcJpeg}
-        alt={alt}
-        width={image.width}
-        height={image.height}
-        className="w-full h-auto"
-        loading="lazy"
-      />
-    </picture>
+    <div className="PhotoItem">
+      <picture>
+        <source srcSet={srcForSp} media="(max-width: 600px)" />
+        <source srcSet={srcForPc} type="image/webp" />
+        <img
+          src={srcForPcJpeg}
+          alt={alt}
+          width={image.width}
+          height={image.height}
+          className="w-full h-auto"
+          loading="lazy"
+        />
+      </picture>
+      <p
+        className={`PhotoItem__caption ${RubikFont.className} text-primary md:text-baseText mt-2 text-xs`}
+      >
+        {photo.modelName}
+      </p>
+    </div>
   )
 }
 
@@ -84,7 +92,7 @@ export const PhotoList = ({ photos }: { photos: PhotoPost[] }) => {
     )
   }
   styles.push(
-    `.${wrapperClassName} ul { position: relative; display: grid; gap: 1rem; margin-inline: auto; }`,
+    `.${wrapperClassName} ul { position: relative; display: grid; gap: 2rem; margin-inline: auto; }`,
   )
 
   styles.push(`.${wrapperClassName} { container-type: inline-size; }`)

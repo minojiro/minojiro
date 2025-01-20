@@ -5,12 +5,11 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'みのじろー | 写真家・フォトグラファー',
-  description: 'minoJiro photographs',
+  description: 'フォトグラファー みのじろーのポートフォリオサイトです。',
   openGraph: {
     images: [
       'https://images.microcms-assets.io/assets/1dde428c7281432db90471bbf3e5cfe6/7615674ae8ac457b82fadfe4fb838a99/Mask%20group.jpg',
     ],
-    description: 'minoJiro photographs',
   },
 }
 

@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes PhotoItem__caption__in {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+    visibility: collapse;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (min-width: 550px) {
+  .PhotoItem__caption {
+    transition: all 0.3s;
+  }
+  .PhotoItem:not(:hover) .PhotoItem__caption {
+    opacity: 0;
+    transform: translateX(10px);
+    visibility: collapse;
+  }
+}
