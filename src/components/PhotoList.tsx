@@ -16,6 +16,8 @@ const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
       <img
         src={srcForPcJpeg}
         alt={alt}
+        width={image.width}
+        height={image.height}
         className="w-full h-auto"
         loading="lazy"
       />
