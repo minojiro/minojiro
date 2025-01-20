@@ -6,15 +6,15 @@ const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
   if (photo.staff) alt += ` – ${photo.staff}`
 
   const { image } = photo
-  const srcForSp = `${image.url}?fm=webp&w=600`
-  const srcForPc = `${image.url}?fm=webp`
-  const srcOriginal = image.url
+  const srcForSp = `${image.url}?fm=webp&w=600&q=40`
+  const srcForPc = `${image.url}?fm=webp&w=800&q=40`
+  const srcForPcJpeg = `${image.url}?w=800`
   return (
     <picture>
       <source srcSet={srcForSp} media="(max-width: 600px)" />
       <source srcSet={srcForPc} type="image/webp" />
       <img
-        src={srcOriginal}
+        src={srcForPcJpeg}
         alt={alt}
         className="w-full h-auto"
         loading="lazy"
@@ -28,7 +28,6 @@ export const PhotoList = ({ photos }: { photos: PhotoPost[] }) => {
   const styles: string[] = []
 
   const WIDTH_LIST = [
-    // [0, 1],
     [500, 2],
     [700, 2],
     [1000, 2],
@@ -88,7 +87,7 @@ export const PhotoList = ({ photos }: { photos: PhotoPost[] }) => {
           </li>
         ))}
       </ul>
-      <style>{styles.join('\n')}</style>
+      <style>{styles.join('\n').replaceAll(/\s+/g, ' ')}</style>
     </div>
   )
 }
