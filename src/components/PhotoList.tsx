@@ -1,5 +1,6 @@
 import type { PhotoPost } from '@/repositories/photos'
 import { RubikFont } from '@/lib/fonts'
+import { getOptimizedImageUrl } from '@/lib/microCmsImage'
 
 const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
   let alt = ''
@@ -7,9 +8,20 @@ const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
   if (photo.staff) alt += ` – ${photo.staff}`
 
   const { image } = photo
-  const srcForSp = `${image.url}?fm=webp&w=600&q=40`
-  const srcForPc = `${image.url}?fm=webp&w=800&q=40`
-  const srcForPcJpeg = `${image.url}?w=800`
+  const srcForSp = getOptimizedImageUrl(image.url, {
+    fm: 'webp',
+    w: 600,
+    q: 40,
+  })
+  const srcForPc = getOptimizedImageUrl(image.url, {
+    fm: 'webp',
+    w: 800,
+    q: 40,
+  })
+  const srcForPcJpeg = getOptimizedImageUrl(image.url, {
+    w: 800,
+    q: 40,
+  })
   return (
     <div className="PhotoItem">
       <picture>
@@ -88,7 +100,9 @@ export const PhotoList = ({ photos }: { photos: PhotoPost[] }) => {
 				}`,
     )
     styles.push(
-      `@container (min-width: ${containerWidth}px) { ${containerStyles.join('\n')} }`,
+      `@container (min-width: ${containerWidth}px) { ${containerStyles.join(
+        '\n',
+      )} }`,
     )
   }
   styles.push(
