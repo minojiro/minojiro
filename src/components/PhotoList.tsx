@@ -64,7 +64,9 @@ export const PhotoList = ({ photos }: { photos: PhotoPost[] }) => {
     const displayWidth =
       (containerWidth - gap * (columnCount - 1)) / columnCount
     const randomShiftMax = containerWidth * 0.044
-    for (const photo of photos) {
+    for (let i = 0; i < photos.length; i++) {
+      const photo = photos[i]
+      const photoClassName = `${wrapperClassName}__${i}`
       const { width, height } = photo.image
       const colH = Math.min(...colHList)
       const colIndex = colHList.indexOf(colH)
@@ -75,29 +77,30 @@ export const PhotoList = ({ photos }: { photos: PhotoPost[] }) => {
       const left = displayWidth * colIndex + (gap * colIndex - 1)
       const top = colH + topGap
       const randomShift = ` translate(
-        ${
+        ${Math.round(
           Math.random() *
-          randomShiftMax *
-          (colCountList[colIndex] % 2 === 0 ? 0.5 : -0.5)
-        }px,
-        ${Math.random() * randomShiftMax * (colIndex % 2 === 0 ? 1 : 0)}px
+            randomShiftMax *
+            (colCountList[colIndex] % 2 === 0 ? 0.5 : -0.5),
+        )}px,
+        ${Math.round(Math.random() * randomShiftMax * (colIndex % 2 === 0 ? 1 : 0))}px
       );`
       containerStyles.push(
-        `.${wrapperClassName} li:nth-child(${photos.indexOf(photo) + 1}) {
-						position: absolute;
-						left: ${left}px;
-						top: ${top}px;
-						width: ${displayWidth}px;
-						height: ${displayHeight}px;
-						transform: ${randomShift};
-					}`,
+        `.${photoClassName} {
+            left: ${Math.round(left)}px;
+            top: ${Math.round(top)}px;
+            width: ${Math.round(displayWidth)}px;
+            transform: ${randomShift};
+          }`,
       )
     }
     containerStyles.push(
       `.${wrapperClassName} ul {
-					width: ${containerWidth}px;
-					height: ${Math.max(...colHList)}px;
-				}`,
+          width: ${containerWidth}px;
+          height: ${Math.max(...colHList)}px;
+        }
+        .${wrapperClassName} li {
+          position: absolute;
+        }`,
     )
     styles.push(
       `@container (min-width: ${containerWidth}px) { ${containerStyles.join(
@@ -114,8 +117,8 @@ export const PhotoList = ({ photos }: { photos: PhotoPost[] }) => {
   return (
     <div className={wrapperClassName}>
       <ul>
-        {photos.map((photo) => (
-          <li key={photo.id}>
+        {photos.map((photo, i) => (
+          <li key={photo.id} className={`${wrapperClassName}__${i}`}>
             <PhotoItem photo={photo} />
           </li>
         ))}
