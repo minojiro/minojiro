@@ -1,11 +1,14 @@
-import { getPhotoPosts } from "@/repositories/photos";
-import { PhotoList } from "@/components/PhotoList";
+import { getPhotoPosts, PhotoPost } from '@/repositories/photos'
+import photos from '../../data/data.json'
+import { PhotoList } from '@/components/PhotoList'
+import Image from 'next/image'
+import Hoge from './10.jpg'
 
 export default async function Home() {
-	const photos = await getPhotoPosts();
-	return (
-		<main className="">
-			<PhotoList photos={photos} />
-		</main>
-	);
+  // PhotoPost[]
+  return (
+    <main className="">
+      <PhotoList photos={photos as PhotoPost[]} />
+    </main>
+  )
 }
