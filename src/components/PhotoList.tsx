@@ -1,23 +1,27 @@
 import type { PhotoPost } from '@/repositories/photos'
 import { RubikFont } from '@/lib/fonts'
 import { getOptimizedImageUrl } from '@/lib/microCmsImage'
-import photoImageMap from '../../data/photoImageMap.json'
 
-const getImage = (id: string, size: 's' | 'm' | 'l') => {
-  const fname = (photoImageMap as Record<string, string>)[[id, size].join('__')]
-  const image = require(`../../data/${fname}`)
-  console.log(image.default.src)
-  return image.default.src
-}
 const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
   let alt = ''
   if (photo.modelName) alt += photo.modelName
   if (photo.staff) alt += ` – ${photo.staff}`
 
   const { image } = photo
-  const srcForSp = getImage(photo.id, 's')
-  const srcForPc = getImage(photo.id, 'm')
-  const srcForPcJpeg = getImage(photo.id, 'l')
+  const srcForSp = getOptimizedImageUrl(image.url, {
+    fm: 'webp',
+    w: 600,
+    q: 40,
+  })
+  const srcForPc = getOptimizedImageUrl(image.url, {
+    fm: 'webp',
+    w: 800,
+    q: 40,
+  })
+  const srcForPcJpeg = getOptimizedImageUrl(image.url, {
+    w: 800,
+    q: 40,
+  })
   return (
     <div className="PhotoItem">
       <picture>
