@@ -1,4 +1,9 @@
 import { ContactClient } from './pageClient'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'お問い合わせ – みのじろー | 写真家・フォトグラファー',
+}
 
 export default async function Contact() {
   return (

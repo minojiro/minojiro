@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import logoImage from './profile.jpg'
 import type { PropsWithChildren } from 'react'
@@ -9,6 +10,10 @@ import {
   faBowlRice,
   faHouse,
 } from '@fortawesome/free-solid-svg-icons'
+
+export const metadata: Metadata = {
+  title: 'プロフィール – みのじろー | 写真家・フォトグラファー',
+}
 
 const ProfileData = (props: PropsWithChildren<{ title: string }>) => {
   return (
