@@ -122,6 +122,8 @@ export const ContactClient = () => {
         <p className="font-bold">お名前・会社名</p>
         <input
           type="text"
+          maxLength={30}
+          name="name"
           className="mt-1 border border-line border-1 bg-primarybg w-full px-4 py-4 rounded text-lg"
           value={formData.name}
           onChange={(e) => setFormDataPartial({ name: e.target.value })}
@@ -132,6 +134,7 @@ export const ContactClient = () => {
         <p className="font-bold">メールアドレス</p>
         <input
           type="email"
+          name="email"
           className="mt-1 border border-line border-1 bg-primarybg w-full px-4 py-4 rounded text-lg"
           value={formData.email}
           onChange={(e) => setFormDataPartial({ email: e.target.value })}
