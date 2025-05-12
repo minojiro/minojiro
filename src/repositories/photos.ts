@@ -8,6 +8,7 @@ export type PhotoPost = {
     height: number;
   };
   modelName: string;
+  modelNameJa?: string;
   staff: string;
 };
 
@@ -20,6 +21,7 @@ type ResponseData = {
       height: number;
     };
     model_name: string;
+    model_name_ja?: string;
     staff: string;
   }[];
 };
@@ -32,6 +34,7 @@ export async function getPhotoPosts(): Promise<PhotoPost[]> {
     id: o.id,
     image: o.image,
     modelName: o.model_name,
+    modelNameJa: o.model_name_ja,
     staff: o.staff,
   }));
 }

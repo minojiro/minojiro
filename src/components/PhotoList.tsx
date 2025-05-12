@@ -3,9 +3,11 @@ import { RubikFont } from '@/lib/fonts'
 import { getOptimizedImageUrl } from '@/lib/microCmsImage'
 
 const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
-  let alt = ''
-  if (photo.modelName) alt += photo.modelName
-  if (photo.staff) alt += ` – ${photo.staff}`
+  let alt = [
+    photo.modelNameJa,
+    photo.modelName,
+    photo.staff,
+  ].filter(Boolean).join(' – ')
 
   const { image } = photo
   const srcForSp = getOptimizedImageUrl(image.url, {
@@ -39,7 +41,7 @@ const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
       <p
         className={`PhotoItem__caption ${RubikFont.className} text-primary md:text-baseText mt-2 text-xs`}
       >
-        {photo.modelName}
+        {photo.modelNameJa || photo.modelName}
       </p>
     </div>
   )

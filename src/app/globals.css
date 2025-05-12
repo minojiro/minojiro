@@ -18,8 +18,8 @@
     transition: all 0.3s;
   }
   .PhotoItem:not(:hover) .PhotoItem__caption {
-    opacity: 0;
-    transform: translateX(10px);
-    visibility: collapse;
+    opacity: 0.3;
+    /* transform: translateX(10px);
+    visibility: collapse; */
   }
 }
