@@ -11,11 +11,11 @@
   <url>
     <loc>https://minojiro.com/profile</loc>
     <lastmod>2025-01-25T06:25:37+00:00</lastmod>
-    <priority>0.80</priority>
+    <priority>0.30</priority>
   </url>
   <url>
     <loc>https://minojiro.com/request</loc>
     <lastmod>2025-01-25T06:25:37+00:00</lastmod>
-    <priority>0.80</priority>
+    <priority>0.10</priority>
   </url>
 </urlset>
