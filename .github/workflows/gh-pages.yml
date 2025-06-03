@@ -19,6 +19,10 @@ jobs:
           node-version: '22'
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile
+      - name: download:images
+        run: X_API_KEY=$X_API_KEY pnpm run download:images
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
       - name: build
         run: X_API_KEY=$X_API_KEY pnpm build
         env:
