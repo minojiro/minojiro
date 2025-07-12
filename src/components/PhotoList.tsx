@@ -10,7 +10,7 @@ const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
 
   const { image } = photo
   return (
-    <div className="PhotoItem">
+    <figure className="PhotoItem">
       <picture>
         <source srcSet={image.urlS} media="(max-width: 600px)" />
         <source srcSet={image.urlM} type="image/webp" />
@@ -23,12 +23,12 @@ const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
           loading="lazy"
         />
       </picture>
-      <p
+      <figcaption
         className={`PhotoItem__caption ${RubikFont.className} text-primary md:text-baseText mt-2 text-xs`}
       >
         {photo.modelNameJa || photo.modelName}
-      </p>
-    </div>
+      </figcaption>
+    </figure>
   )
 }
 
