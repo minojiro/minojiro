@@ -1,6 +1,5 @@
 import type { PhotoPost } from '@/repositories/photos'
 import { RubikFont } from '@/lib/fonts'
-import { getOptimizedImageUrl } from '@/lib/microCmsImage'
 
 const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
   let alt = [
@@ -10,27 +9,13 @@ const PhotoItem = ({ photo }: { photo: PhotoPost }) => {
   ].filter(Boolean).join(' – ')
 
   const { image } = photo
-  const srcForSp = getOptimizedImageUrl(image.url, {
-    fm: 'webp',
-    w: 600,
-    q: 40,
-  })
-  const srcForPc = getOptimizedImageUrl(image.url, {
-    fm: 'webp',
-    w: 800,
-    q: 40,
-  })
-  const srcForPcJpeg = getOptimizedImageUrl(image.url, {
-    w: 800,
-    q: 40,
-  })
   return (
     <div className="PhotoItem">
       <picture>
-        <source srcSet={srcForSp} media="(max-width: 600px)" />
-        <source srcSet={srcForPc} type="image/webp" />
+        <source srcSet={image.urlS} media="(max-width: 600px)" />
+        <source srcSet={image.urlM} type="image/webp" />
         <img
-          src={srcForPcJpeg}
+          src={image.url}
           alt={alt}
           width={image.width}
           height={image.height}
