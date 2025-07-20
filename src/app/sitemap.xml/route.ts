@@ -52,37 +52,45 @@ function nodeToXml(node: XmlNode | string, indent = ''): string {
 }
 
 export async function GET() {
-  const pages = [
-    { url: 'https://minojiro.com', priority: '1.0', changefreq: 'weekly' },
-    { url: 'https://minojiro.com/profile', priority: '0.8', changefreq: 'yearly' },
-    { url: 'https://minojiro.com/request', priority: '0.6', changefreq: 'yearly' }
-  ]
+  const imageUpdatedAtList = PHOTOS.filter(p => p.updatedAt).map(p => new Date(p.updatedAt as string).getTime())
+  if (imageUpdatedAtList.length === 0) {
+    imageUpdatedAtList.push(new Date().getTime())
+  }
+  const imageLastMod = new Date(Math.max(...imageUpdatedAtList)).toISOString()
 
   const sitemap = h('urlset',
     {
       xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9',
       'xmlns:image': 'http://www.google.com/schemas/sitemap-image/1.1'
     },
-    pages.map(page =>
+    [
       h('url', {}, [
-        h('loc', {}, [page.url]),
-        h('lastmod', {}, [new Date().toISOString()]),
-        h('changefreq', {}, [page.changefreq]),
-        h('priority', {}, [page.priority]),
-        ...(page.url === 'https://minojiro.com'
-          ? PHOTOS.map(p =>
-            h('image:image', {}, [
-              h('image:loc', {}, [`https://minojiro.com${p.image.urlS}`]),
-              h('image:caption', {}, [[p.modelNameJa || '', p.modelName || ''].filter(Boolean).join(' - ')])
-            ])
-          )
-          : []
-        )
+        h('loc', {}, ['https://minojiro.com']),
+        h('lastmod', {}, [imageLastMod]),
+        h('changefreq', {}, ['weekly']),
+        h('priority', {}, ['1.0']),
+        ...PHOTOS.map(p =>
+          h('image:image', {}, [
+            h('image:loc', {}, [`https://minojiro.com${p.image.urlS}`]),
+            h('image:caption', {}, [[p.modelNameJa || '', p.modelName || ''].filter(Boolean).join(' - ')])
+          ]))
+      ]),
+      h('url', {}, [
+        h('loc', {}, ['https://minojiro.com/profile']),
+        h('lastmod', {}, ['2025-07-19T10:37:14.969Z']),
+        h('changefreq', {}, ['yearly']),
+        h('priority', {}, ['0.8']),
+      ]),
+      h('url', {}, [
+        h('loc', {}, ['https://minojiro.com/request']),
+        h('lastmod', {}, ['2025-07-19T10:37:14.969Z']),
+        h('changefreq', {}, ['yearly']),
+        h('priority', {}, ['0.6']),
       ])
-    )
+    ]
   )
 
-  const xml = xmlFormat(`<?xml version="1.0" encoding="UTF-8"?>\n${nodeToXml(sitemap)}`, {
+  const xml = xmlFormat(`<?xml version="1.0" encoding="UTF-8"?>${nodeToXml(sitemap)}`, {
     indentation: '  ',
     collapseContent: true,
     lineSeparator: '\n'

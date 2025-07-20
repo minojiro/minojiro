@@ -23,6 +23,7 @@ export type PhotoPost = {
   modelName: string;
   modelNameJa?: string;
   staff: string;
+  updatedAt: string;
 };
 
 type ResponseData = {
@@ -33,6 +34,7 @@ type ResponseData = {
       width: number;
       height: number;
     };
+    updatedAt: string;
     model_name: string;
     model_name_ja?: string;
     staff: string;
@@ -83,6 +85,7 @@ const resetDir = async (path: string) => {
       modelName: o.model_name,
       modelNameJa: o.model_name_ja,
       staff: o.staff,
+      updatedAt: o.updatedAt,
       image: {
         url: await downloadFile(
           o.image.url + "?fm=webp&w=600&q=40",
