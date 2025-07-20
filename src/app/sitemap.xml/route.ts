@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import PHOTOS from '@/constants/photos.json'
+import xmlFormat from 'xml-formatter';
 
 type XmlNode = {
   tag: string
@@ -44,10 +45,10 @@ function nodeToXml(node: XmlNode | string, indent = ''): string {
   }
 
   const childrenXml = children
-    .map(child => nodeToXml(child, indent + '  '))
-    .join('\n')
+    .map(child => nodeToXml(child, indent))
+    .join('')
 
-  return `${indent}<${tag}${attributes}>\n${childrenXml}\n${indent}</${tag}>`
+  return `${indent}<${tag}${attributes}>${childrenXml}${indent}</${tag}>`
 }
 
 export async function GET() {
@@ -81,7 +82,11 @@ export async function GET() {
     )
   )
 
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n${nodeToXml(sitemap)}`
+  const xml = xmlFormat(`<?xml version="1.0" encoding="UTF-8"?>\n${nodeToXml(sitemap)}`, {
+    indentation: '  ',
+    collapseContent: true,
+    lineSeparator: '\n'
+  })
 
   return new NextResponse(xml, {
     headers: {
