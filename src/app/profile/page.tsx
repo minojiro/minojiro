@@ -13,6 +13,120 @@ import {
 
 export const metadata: Metadata = {
   title: 'プロフィール – みのじろー | 写真家・フォトグラファー',
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "みのじろー",
+      "alternateName": "minoJiro",
+      "jobTitle": "フォトグラファー",
+      "description": "東京都在住のフォトグラファー。専門学校東京ビジュアルアーツ写真学科コマーシャルフォト専攻を卒業後、フリーランスとして活動中。",
+      "url": "https://minojiro.com",
+      "image": "https://minojiro.com/profile.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "東京都",
+        "addressCountry": "JP"
+      },
+      "birthPlace": {
+        "@type": "Place",
+        "name": "愛知県"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "専門学校東京ビジュアルアーツ",
+        "department": "写真学科コマーシャルフォト専攻"
+      },
+      "knowsAbout": [
+        "人物撮影",
+        "ペット撮影",
+        "小物撮影",
+        "食品撮影",
+        "インテリア撮影",
+        "ポートレート",
+        "コマーシャルフォト"
+      ],
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "recognizedBy": {
+          "@type": "EducationalOrganization",
+          "name": "専門学校東京ビジュアルアーツ"
+        }
+      },
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "フリーランス"
+        }
+      ],
+      "client": [
+        {
+          "@type": "Organization",
+          "name": "協同出版株式会社"
+        },
+        {
+          "@type": "Organization",
+          "name": "東山遊園株式会社"
+        },
+        {
+          "@type": "Organization",
+          "name": "株式会社FLANDRE"
+        },
+        {
+          "@type": "Organization",
+          "name": "HATAKE AOYAMA"
+        },
+        {
+          "@type": "Organization",
+          "name": "相真工務店"
+        }
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "フォトグラファー",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "東京"
+        }
+      },
+      "makesOffer": {
+        "@type": "Service",
+        "serviceType": "写真撮影",
+        "areaServed": "東京都",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "撮影サービス",
+          "itemListElement": [
+            {
+              "@type": "Service",
+              "name": "人物撮影"
+            },
+            {
+              "@type": "Service",
+              "name": "ペット撮影"
+            },
+            {
+              "@type": "Service",
+              "name": "小物撮影"
+            },
+            {
+              "@type": "Service",
+              "name": "食品撮影"
+            },
+            {
+              "@type": "Service",
+              "name": "インテリア撮影"
+            }
+          ]
+        }
+      },
+      "award": [
+        "写真集「夏目あおいのなつやすみ」出版",
+        "合同写真展「ポートレート専科」参加"
+      ]
+    }),
+  },
 }
 
 const ProfileData = (props: PropsWithChildren<{ title: string }>) => {
